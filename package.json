@@ -1,0 +1,26 @@
+{
+  "name": "webapp",
+  "displayName": "WebApp",
+  "version": "1.0.0",
+  "description": "Cordova app wrapper for Google Apps Script WebApp",
+  "main": "index.js",
+  "scripts": {
+    "build": "cordova build android",
+    "run": "cordova run android",
+    "prepare": "cordova prepare"
+  },
+  "author": "mahmoud eltawil",
+  "license": "MIT",
+  "devDependencies": {
+    "cordova-android": "^14.0.1",
+    "cordova-plugin-whitelist": "^1.3.5"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.webapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>WebApp</name>
+    <description>
+        Cordova app wrapper for Google Apps Script WebApp
+    </description>
+    <author email="you@example.com" href="https://github.com/yourusername">mahmoud</author>
+    
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="default" />
+    <preference name="AndroidInsecureFileModeEnabled" value="true" />
+    
+    <!-- Android specific preferences -->
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash.png" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#FFFFFF" />
+    
+    <!-- Required for iframe content loading -->
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+</widget>
