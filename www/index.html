@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: https://ssl.gstatic.com; style-src * 'self' 'unsafe-inline'; media-src *; img-src * 'self' data: content:;">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: gap: https://ssl.gstatic.com 'self' https://script.google.com https://script.googleusercontent.com; style-src * 'unsafe-inline' 'self' blob:; media-src *; img-src * 'self' data: content:; script-src * 'unsafe-inline' 'unsafe-eval' data: https://ssl.gstatic.com; connect-src * 'self' blob:;">
   <title>WebApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
   <meta name="format-detection" content="telephone=no">
@@ -29,12 +29,15 @@
     <!-- Content iframe -->
     <iframe 
       id="content-frame" 
-      src="https://script.google.com/macros/s/AKfycbyhWqe8rFs-viUaqY-qnJgW_d9YxqzxuyStyQ7HbpVbYI_jdqlugfmSw456GelzAFFd/exec" 
+      src="about:blank" 
       style="display: none;"
-      allowfullscreen>
+      allowfullscreen
+      allow="geolocation; microphone; camera">
     </iframe>
   </div>
   
+  <!-- Cordova script (important: load this first) -->
+  <script type="text/javascript" src="cordova.js"></script>
   <!-- JavaScript -->
   <script src="js/app.js"></script>
 </body>

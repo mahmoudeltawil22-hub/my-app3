@@ -11,9 +11,16 @@
     <allow-navigation href="*" />
     <allow-intent href="*" />
 
+    <!-- Important preferences for loading external content -->
     <preference name="Fullscreen" value="true" />
     <preference name="Orientation" value="default" />
     <preference name="AndroidInsecureFileModeEnabled" value="true" />
+    <preference name="loadUrlTimeoutValue" value="60000" />
+    <preference name="BackgroundColor" value="0xFFFFFFFF" />
+    <preference name="ScrollEnabled" value="true" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="BackupWebStorage" value="none" />
     
     <!-- Android specific preferences -->
     <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash.png" />
