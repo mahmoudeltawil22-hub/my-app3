@@ -4,7 +4,7 @@
     <description>
         Cordova app wrapper for Google Apps Script WebApp
     </description>
-    <author email="you@example.com" href="https://github.com/yourusername">mahmoud</author>
+    <author email="mahmoudeltawil22@gmail.com" href="https://github.com/mahmoudeltawil22-hub">mahmoud</author>
     
     <content src="index.html" />
     <access origin="*" />
